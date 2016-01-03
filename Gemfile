@@ -5,3 +5,4 @@ gem "middleman-livereload", "~> 3.1.0"
 gem 'redcarpet'
 gem "bootstrap-sass", :require => false
 gem "jquery-middleman"
+gem 'middleman-s3_sync', "~> 3.0.0"
