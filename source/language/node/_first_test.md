@@ -3,8 +3,8 @@ Create the file `test/odenay_test.js` with the following contents:
 ```javascript
 describe("translateWord", function () {
   it("should translate the word", function () {
-    var result = piglatin.translateWord("word");
-    expect(result).toBe("ordway");
+    var result = piglatin.translateWord("apple");
+    expect(result).toBe("appleyay");
   });
 });
 ```

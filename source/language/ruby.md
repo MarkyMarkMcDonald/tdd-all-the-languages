@@ -1,4 +1,3 @@
 ---
 language: Ruby
-layout: tdd
 ---

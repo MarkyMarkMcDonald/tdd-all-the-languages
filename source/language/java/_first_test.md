@@ -9,7 +9,7 @@ public class PiglatinTest {
 
     @Test
     public void translateWord_startingWithSingleConsonant() {
-        assertEquals("ordway", Piglatin.translateWorld("word"));
+        assertEquals("apple", Piglatin.translateWorld("appleyay"));
     }
 }
 ```

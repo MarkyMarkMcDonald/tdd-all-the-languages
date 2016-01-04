@@ -12,6 +12,8 @@ set :css_dir, 'stylesheets'
 set :images_dir, 'images'
 set :js_dir, 'javascripts'
 
+set :layout, 'tdd'
+
 ###
 # Page options, layouts, aliases and proxies
 ###

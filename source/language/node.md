@@ -1,4 +1,3 @@
 ---
 language: Node
-layout: tdd
 ---

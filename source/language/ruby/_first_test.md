@@ -4,7 +4,7 @@ Create the file `spec/piglatin_spec.rb` with the following contents:
 describe Piglatin do
   context "word startig with a consonant" do
     it "translates the word" do
-      expect(Piglatin.translate_word "word").to eq "ordway"
+      expect(Piglatin.translate_word "apple").to eq "appleyay"
     end
   end
 end
