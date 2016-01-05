@@ -6,13 +6,13 @@ source "https://rubygems.org"
 gem 'rspec'
 ```
 
-Then run `bundle` to install the dependencies:
+Then run `bundle` to install the dependencies.
 
-Now we'll initialize our project to use Rspec:
+Next we'll initialize our project to use RSpec:
 
 ```sh
 $ rspec --init
 ```
 
-Then run `rspec` to ensure everything is set up correctly
+Then run `rspec` to ensure everything is set up correctly.
 
