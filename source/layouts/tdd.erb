@@ -3,9 +3,19 @@
 
   <h2>Installing Homebrew</h2>
 
-  <p>We start by installing Homebrew which will make installing everything else much easier.</p>
+  <p>We start by installing <a href="http://brew.sh/">Homebrew</a> which will make installing everything else much easier.</p>
 
   <pre><code>$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></pre>
+
+  <p>Then ensure you have the latest version of Homebrew:</p>
+
+  <pre><code>$ brew update</code></pre>
+
+  <p>And then finally ensure that Homebrew's environment is healthy:</p>
+
+  <pre><code>$ brew doctor</code></pre>
+
+  <p>This may give you some commands to run in order to fix any problems.</p>
 
   <h2>Installing <%= current_page.data.language %></h2>
 
@@ -24,5 +34,4 @@
   <h2>Our First Failing Test</h2>
 
   <%= section "first_test" %>
-
 <% end %>
