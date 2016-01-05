@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+Isource 'https://rubygems.org'
 
 gem "middleman", "~>3.4.0"
 gem "middleman-livereload", "~> 3.1.0"
@@ -7,3 +7,4 @@ gem "mime-types", "~> 3.0.0"
 
 gem "bootstrap-sass", :require => false
 gem "jquery-middleman"
+gem 'redcarpet'
