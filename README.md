@@ -1,3 +1,5 @@
+[![Circle CI](https://circleci.com/gh/spilth/tdd-all-the-languages.svg?style=svg)](https://circleci.com/gh/spilth/tdd-all-the-languages)
+
 # TDD All The Languages!
 
 ## Don't see your favorite language?
