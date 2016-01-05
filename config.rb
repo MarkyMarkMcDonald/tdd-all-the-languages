@@ -38,12 +38,17 @@ page '/*.txt', layout: false
 # Helpers
 ###
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def section(section_name)
+    partial_path =  "language/#{current_page.data.language.downcase}/_#{section_name}"
+    file_path = File.join(root, "source/#{partial_path}.md")
+    if File.exist?(file_path)
+      partial(partial_path)
+    else
+      partial('missing')
+    end
+  end
+end
 
 # Build-specific configuration
 configure :build do

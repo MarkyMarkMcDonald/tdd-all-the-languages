@@ -11,17 +11,18 @@
 
   <p>The next thing we need to do is install the language on our system.  We'll be using Homebrew to do that.</p>
 
-  <%= partial "language/" + current_page.data.language.downcase + "/language_installation" %>
+  <%= section "language_installation" %>
 
   <h2>Creating a Project</h2>
 
-  <%= partial "language/" + current_page.data.language.downcase + "/project_setup" %>
+  <%= section "project_setup" %>
 
   <h2>Add Unit Testing Library</h2>
 
-  <%= partial "language/" + current_page.data.language.downcase + "/testing_library" %>
+  <%= section "testing_library" %>
 
   <h2>Our First Failing Test</h2>
 
-  <%= partial "language/" + current_page.data.language.downcase + "/first_test" %>
+  <%= section "first_test" %>
+
 <% end %>
