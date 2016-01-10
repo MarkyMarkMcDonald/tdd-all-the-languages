@@ -51,7 +51,9 @@ Here are the tests we will use to help us build out the Pig Latin translator:
 
 ## How would you like to proceed?
 
+- [Elixir](/language/elixir)
 - [Java](/language/java)
 - [Node](/language/node)
+- [Python](/language/python)
 - [Ruby](/language/ruby)
 
