@@ -1,0 +1,74 @@
+= wrap_layout :layout do
+  h1
+    | TDD with 
+    = current_page.data.language
+
+  h2 Installing Homebrew
+
+  p
+    | We start by installing
+    a href="http://brew.sh/"  Homebrew 
+    | which will make installing everything else much easier.
+
+  pre
+    code $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+  p Then ensure you have the latest version of Homebrew:
+
+  pre
+    code $ brew update
+
+  p And then finally ensure that Homebrew's environment is healthy:
+
+  pre
+    code $ brew doctor
+
+  p This may give you some commands to run in order to fix any problems.
+
+  h2
+    | Installing 
+    = current_page.data.language
+
+  p
+    | The next thing we need to do is install 
+    = current_page.data.language
+    | on our system.  We'll be using Homebrew to do that.
+
+  = section "language_installation"
+
+  h2 Creating a Project
+
+  = section "project_setup"
+
+  h2 Add Unit Testing Library
+
+  = section "testing_library"
+
+  h2 Our First Failing Test
+
+  = section "first_test"
+
+  h2 Create the Piglatin Class
+
+  = section "piglatin_class"
+
+  h2 Create the Translate Word Method
+
+  = section "translate_word_method"
+
+  h2 Fix the Method Signature
+
+  = section "method_signature"
+
+  h2 Return the Correct Answer
+
+  = section "correct_answer"
+
+  h2 Another Word
+
+  = section "another_word"
+
+  h2 Some Actual Code
+
+  = section "actual_code"
+

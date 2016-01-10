@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta charset="utf-8" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    title = current_page.data.language || "TDD"
+    = stylesheet_link_tag "all"
+    = javascript_include_tag  "all"
+  body
+    .container
+      nav.navbar.navbar-default.navbar-fixed-top
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" type="button" 
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand href="/"  TDD
+          #navbar.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li
+                a href="/language/elixir"  Elixir
+              li
+                a href="/language/java"  Java
+              li
+                a href="/language/node"  Node
+              li
+                a href="/language/python"  Python
+              li
+                a href="/language/ruby"  Ruby
+            ul.nav.navbar-nav.navbar-right
+              li
+                a href="https://github.com/spilth/tdd-all-the-languages"  Contribute!
+
+      = yield
+
