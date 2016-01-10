@@ -23,7 +23,7 @@ F
 Failures:
 
   1) Piglatin words starting with a consonant translates the word correctly
-     Failure/Error: expect(Piglatin.translate_word 'word').to eq 'ordway'
+     Failure/Error: expect(Piglatin.translate_word 'apple').to eq 'appleway'
 
      NoMethodError:
        undefined method `translate_word' for Piglatin:Class

@@ -1,9 +1,9 @@
-What's the easiest way to make this pass? How about just returning the string `ordway`:
+What's the easiest way to make this pass? How about just returning the string `appleway`:
 
 ```ruby
 class Piglatin
   def self.translate_word(word)
-    "ordway"
+    "appleway"
   end
 end
 ```

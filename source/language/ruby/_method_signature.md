@@ -17,9 +17,9 @@ F
 Failures:
 
   1) Piglatin words starting with a consonant translates the word correctly
-     Failure/Error: expect(Piglatin.translate_word 'word').to eq 'ordway'
+     Failure/Error: expect(Piglatin.translate_word 'word').to eq 'appleway'
 
-       expected: "ordway"
+       expected: "appleway"
             got: nil
 
        (compared using ==)
