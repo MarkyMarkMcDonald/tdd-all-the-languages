@@ -10,12 +10,13 @@ describe Piglatin do
 end
 ```
 
-And then run your test using `rspec` to see it fail:
+Here we are telling RSpec that we'd like a class named `Piglatin` that has a class method named `translate_word` and when we pass it the word `apple` it we expect to get back `appleway`.
+
+Run your test using `rspec` to see it fail:
 
 ```sh
 $ rspec
 /Users/bkelly/temp/piglatin-ruby/spec/piglatin_spec.rb:1:in `<top (required)>': uninitialized constant Piglatin (NameError)
 ```
 
-Here it is complaining that it doesn't know anything about a class named `Piglatin`
-
+It's failing because we haven't actually created a class named `Piglatin` yet.
