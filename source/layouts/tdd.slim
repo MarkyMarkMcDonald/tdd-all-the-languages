@@ -3,36 +3,41 @@
     | TDD with 
     = current_page.data.language
 
-  h2 Installing Homebrew
+  h2 Install Homebrew
 
   p
-    | We start by installing
+    | We're going to start by installing
     a href="http://brew.sh/"  Homebrew 
-    | which will make installing everything else much easier.
+    | which will make installing everything else we need much easier.
+
+  p Open a Terminal window and copy and paste the following into your terminal:
 
   pre
     code $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-  p Then ensure you have the latest version of Homebrew:
+  p Then ensure you have the latest version of Homebrew by typing the following:
 
   pre
     code $ brew update
 
-  p And then finally ensure that Homebrew's environment is healthy:
+  p And finally, ensure that Homebrew's environment is in a healthy state:
 
   pre
     code $ brew doctor
 
-  p This may give you some commands to run in order to fix any problems.
+  p
+    | This may give you some commands to run in order to fix any problems. Once those issues are dealt with you are ready to install 
+    = current_page.data.language
+    | .
 
   h2
-    | Installing 
+    | Install 
     = current_page.data.language
 
   p
-    | The next thing we need to do is install 
+    | Now we're ready to install 
     = current_page.data.language
-    |  on our system.  We'll be using Homebrew to do that.
+    |  on our system. We'll be using Homebrew to do that.
 
   = section "001_language_installation"
 
@@ -40,7 +45,15 @@
 
   = section "002_project_setup"
 
-  h2 Add Unit Testing Library
+  h2 Dependency Management
+
+  p When building a software project you will often use libraries created by other people. In order to both specify and automatically download these dependencies you'll want to use a dependency management system.
+
+  = section "002b_dependency_management"
+
+  h2 Add Testing Framework
+
+  p In order to express the requirements of our code we're going to use a testing framework. Testing frameworks, at their most basic, allow you to test the output of a function when given a certain input.
 
   = section "003_testing_library"
 
