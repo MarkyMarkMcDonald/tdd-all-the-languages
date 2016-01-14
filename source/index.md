@@ -55,6 +55,7 @@ The language with the most progress is [Ruby](/language/ruby) but the following 
 
 - [Elixir](/language/elixir)
 - [Java](/language/java)
+- [Kotlin](/language/kotlin)
 - [Node](/language/node)
 - [Python](/language/python)
 
