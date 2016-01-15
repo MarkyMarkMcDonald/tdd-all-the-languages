@@ -2,6 +2,9 @@
   h1
     | TDD with 
     = current_page.data.language
+    |  
+    a href="/pdfs/#{current_page.data.language.downcase}.pdf"
+      i class="fa fa-file-pdf-o"
 
   h2 Install Homebrew
 

@@ -9,4 +9,7 @@ gem "mime-types", "~> 3.0.0"
 gem "bootstrap-sass", :require => false
 gem "jquery-middleman"
 gem 'redcarpet'
+gem 'pdfkit'
+gem 'wkhtmltopdf-binary'
+gem 'font-awesome-middleman'
 

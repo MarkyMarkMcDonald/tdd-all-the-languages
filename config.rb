@@ -1,4 +1,7 @@
+require 'makepdf'
+
 activate :directory_indexes
+activate :pdfgenerator
 
 activate :s3_sync do |s3_sync|
   s3_sync.bucket = 'tdd.spilth.org'
@@ -11,6 +14,7 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 set :css_dir, 'stylesheets'
 set :images_dir, 'images'
 set :js_dir, 'javascripts'
+set :fonts_dir,  'fonts-folder'
 
 set :layout, 'tdd'
 
@@ -31,10 +35,5 @@ helpers do
 end
 
 configure :build do
-  # Minify CSS on build
-  # activate :minify_css
-
-  # Minify Javascript on build
-  # activate :minify_javascript
 end
 
