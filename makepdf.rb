@@ -2,11 +2,12 @@ require 'pdfkit'
 require 'fileutils'
 
 class PdfGenerator < Middleman::Extension
-  def after_build(builder)
+  LANGUAGES = %w(ruby java kotlin node python ruby elixir)
+
+  def before_build(builder)
     FileUtils::mkdir_p 'build/pdfs'
 
-    languages = %w(ruby java kotlin node python ruby)
-    languages.each do |language|
+    LANGUAGES.each do |language|
       begin
         kit = PDFKit.new(File.new("build/language/#{language}/index.html"),
                          :margin_top => 10,
@@ -26,6 +27,15 @@ class PdfGenerator < Middleman::Extension
 
     builder.say_status "PDF Maker",  "PDFs Generated!"
   end
+
+  def manipulate_resource_list(resources)
+    LANGUAGES.each do |language|
+      resources << Middleman::Sitemap::Resource.new(app.sitemap, "pdfs/#{language}.pdf", "build/pdfs/#{language}.pdf")
+    end
+
+    resources
+  end
+
 end
 
 
