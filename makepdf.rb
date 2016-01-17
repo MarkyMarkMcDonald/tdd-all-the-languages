@@ -4,7 +4,7 @@ require 'fileutils'
 class PdfGenerator < Middleman::Extension
   LANGUAGES = %w(ruby java kotlin node python ruby elixir)
 
-  def before_build(builder)
+  def after_build(builder)
     FileUtils::mkdir_p 'build/pdfs'
 
     LANGUAGES.each do |language|
