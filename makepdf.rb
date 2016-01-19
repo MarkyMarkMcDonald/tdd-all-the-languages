@@ -21,7 +21,9 @@ class PdfGenerator < Middleman::Extension
 
     LANGUAGES.each do |language|
       begin
-        kit = PDFKit.new(File.new("build/language/#{language}/index.html"),
+        file = File.open("build/language/#{language}/index.html", "rb")
+        html = file.read
+        kit = PDFKit.new(html,
           :margin_top => 10,
           :margin_bottom => 10,
           :margin_left => 10,
@@ -29,6 +31,7 @@ class PdfGenerator < Middleman::Extension
           :print_media_type => true,
           :dpi => 96)
 
+        kit.stylesheets << 'source/stylesheets/pdf.css'
         kit.to_file("build/pdfs/#{language}.pdf")
 
       rescue Exception =>e
