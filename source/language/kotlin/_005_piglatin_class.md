@@ -9,7 +9,7 @@ fun translateWord() {
 
 ```
 
-<div class="alert alert-warning" role="alert">In other languages we use the concept of a Class method but Kotlin does not have that concept. Instead we are using a <a href="https://kotlinlang.org/docs/reference/classes.html#companion-objects">package-level functions</a>.</div>
+<div class="alert alert-warning" role="alert">In other languages we use the concept of a Class method, but Kotlin recommends <a href="https://kotlinlang.org/docs/reference/classes.html#companion-objects">package-level functions</a> instead</div>
 
 Now we run our tests again:
 
